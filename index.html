@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rest Countries API</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+</head>
+<body>
+    <main>
+
+        <header>
+            <div class="title">
+                <h1>Where in the world?</h1>
+            </div>
+            <div class="mode-switch">
+                <h3><i class="far fa-moon"></i>Dark mode</h3>
+            </div>
+        </header>
+
+        <div class="container">
+            
+        <section class="countries">
+            <div class="search-box">
+                <span class="search">
+                    <i class="fas fa-search"></i>
+                    <input placeholder="Search for a country..." id="search" value="">
+                </span>
+            </div>
+            <div class="region-select">
+                <div class="dropdown" id="filter">
+					Filter by Region
+					<i class="fas fa-chevron-down"></i>
+					<ul>
+						<li>All</li>
+						<li>Africa</li>
+						<li>Americas</li>
+						<li>Asia</li>
+						<li>Europe</li>
+						<li>Oceania</li>
+					</ul>
+				</div>
+            </div>
+        </section>
+
+        <section class="countries-list">
+            <div class="ring">Loading
+                <span></span>
+            </div>
+        </section>
+
+        </div>
+
+        <section class="detailed-country-data">
+
+        </section>
+
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
